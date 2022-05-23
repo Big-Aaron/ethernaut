@@ -35,10 +35,10 @@ await contract.password()
 await contract.authenticate("ethernaut0")
 ```
 
-![image-20220523161118681](D:\workspace\solidity\ethernaut\0.Hello Ethernaut\调用过程.png)
+![image-20220523161118681](./调用过程.png)
 
 然后点击提交实例
 
-![image-20220523161249830](D:\workspace\solidity\ethernaut\0.Hello Ethernaut\提交成功.png)
+![image-20220523161249830](./提交成功.png)
 
 吐槽：这个配色有点...
