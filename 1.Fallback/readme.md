@@ -88,7 +88,7 @@ contract Fallback {
 
    查询合约owner有多少余额，1000贡献（1000ETH）
 
-   ![image-20220523161816607](D:\workspace\solidity\ethernaut\1.Fallback\owner的余额.png)
+   ![image-20220523161816607](./owner的余额.png)
 
    你有钱，你牛逼！
 
