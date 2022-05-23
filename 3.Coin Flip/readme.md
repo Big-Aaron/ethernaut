@@ -64,7 +64,7 @@ interface CoinFlip {
 contract Attack {
     using SafeMath for uint256;
 
-	// 根据我的实例合约地址，shengc
+	// 根据我的实例合约地址，生成合约实例
     CoinFlip constant private target = CoinFlip(0xed1c7473A164Ff3C40Ff344d0cb4C222f2fdCC7C);
 
     uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
