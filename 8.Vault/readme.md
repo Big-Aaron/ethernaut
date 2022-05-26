@@ -33,7 +33,7 @@ contract Vault {
 
 合约无解，但是password作为明文在构造时传入了，只要找到构造合约的交易就能找到password。我在[Etherscan](https://rinkeby.etherscan.io/address/0x4958d0e84c5709afa517772557e478a190cc5996#code)上查看合约时发现提示：
 
-![image-20220525144931517](.\网站提示.png)
+![image-20220525144931517](./网站提示.png)
 
 然后我点进提示的地址：0xB32Ef1e8b55FE270Bc665F52076bc677B0D02f8f
 
