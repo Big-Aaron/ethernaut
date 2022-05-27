@@ -28,11 +28,11 @@ contract Elevator {
 }
 ```
 
-攻击思路
+## 攻击思路
 
 只要两次连续调用返回的bool值不同即可
 
-攻击代码
+## 攻击代码
 
 ```solidity
 // SPDX-License-Identifier: MIT
