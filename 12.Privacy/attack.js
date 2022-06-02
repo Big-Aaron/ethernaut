@@ -4,4 +4,3 @@ const web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io
 
 web3.eth.getStorageAt("0x299B8a1409Ae37F0ABBe5470e6694cFB7b39Eb2a", 5)
 .then(console.log);
-
