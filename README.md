@@ -8,4 +8,8 @@ You are now ready to complete all the levels of the game, and as of now, you're 
 
 Godspeed!!
 
-![EVM操作码](.\EVM操作码.png)
+![EVM操作码](./EVM操作码.png)
+
+
+
+用Foundry重写了Ethernaut的解决过程：[ethernaut-foundry-solution](https://github.com/Big-Aaron/ethernaut-foundry-solution)
